@@ -32,3 +32,34 @@ Const adalah sebuah cara untuk meng identifikasi sebuah variable dapat diganti n
 6. Ketika _counter>0 maka dexrement dapat dilakukan
 7. Jika _counter ganjil maka widget Text akan mengeluarkan ganjil, dan sebaliknya.
 8. Lakukan git add, commit, push
+
+## TUGAS 8
+### Navigator.push dan Navigator.pushReplacement
+Navigator push dan push replacement berguna untuk switch screen ke suatu screen lainnya. Namun perbedaannya adalah jika kita menggunakan Navigator push, maka route screen yang lama tidak dihapus, sehingga kita bisa kembali ke route yang lama. Lain hal dengan navigator push replacement, route screen yang lama dihapus dan kita tidak bisa kembali ke route yang lama.
+
+### Widgets yang digunakan
+- Container, berguna untuk mengatur lokasi widgets
+- Text, berguna untuk menampilkan text
+- Column, Row, berguna untuk menata widgets dalam bentuk kolom atau baris
+- Form, berguna untuk membuat form
+- TextFormField, berguna untuk menyimpan input text sebuah form
+- DropdownButton, berguna untuk membuat dropdown
+- Padding, berguna untuk memberikan padding pada suatu widget agar lebih rapi
+- TextButton, button yang berisi text, dapat digunakan untuk mensubmit form
+- ListTile, widget yang sangat berguna untuk menampilkan sebuah informasi dalam format tertentu
+- SingleChildScrollView, berguna agar suatu widget dapat ditampilkan jika melebih layar dengan scroll
+- Card, digunakan untuk membantu menampilkan data budget
+
+### Jenis event Flutter
+- onPressed, terjadi ketika dipencet
+- onTap, terjadi ketika ditap
+- onSaved, terjadi ketika form disave
+- onChanged, terjadi ketika text form field berubah isinya
+
+### Implementasi 
+1. Membuat drawer.dart, data.dart, form.dart, dan budget.dart
+2. data.dart berisikan tentang data budget ynag sudah disimpan
+3. form.dart berisikan tentang form untuk menambah budget
+4. drawer.dart berisikan untuk navigator halaman lain
+5. budget.dart adalah suatu class yang menandakan class pada pengisian budget 
+6. pada drawer terdapat 3 children berupa tombol yang akan melakukan `pushReplacement` ke halaman yang sesuai dengan tombol masing-masing.
